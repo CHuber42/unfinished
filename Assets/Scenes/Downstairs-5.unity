@@ -169,7 +169,11 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
+<<<<<<< HEAD:Assets/Scenes/Downstairs.unity
 --- !u!1001 &977126786
+=======
+--- !u!1001 &1040204936
+>>>>>>> 8f1cf95ff2d0c5b9ac38b5c7ee7f01b30d577ba7:Assets/Scenes/Downstairs-5.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -219,7 +223,11 @@ PrefabInstance:
     - target: {fileID: 4959445539304100748, guid: a251fa32726cc40849c15594dbcd62fb,
         type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD:Assets/Scenes/Downstairs.unity
       value: 2
+=======
+      value: 3
+>>>>>>> 8f1cf95ff2d0c5b9ac38b5c7ee7f01b30d577ba7:Assets/Scenes/Downstairs-5.unity
       objectReference: {fileID: 0}
     - target: {fileID: 4959445539304100748, guid: a251fa32726cc40849c15594dbcd62fb,
         type: 3}
@@ -245,13 +253,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2054650814, guid: 756bf770e1b5f4a72ab292aed27ffcd8, type: 3}
+      propertyPath: transitionName
+      value: DownstairsHallway
+      objectReference: {fileID: 0}
     - target: {fileID: 2054650815, guid: 756bf770e1b5f4a72ab292aed27ffcd8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.45
+      value: 5.92
       objectReference: {fileID: 0}
     - target: {fileID: 2054650815, guid: 756bf770e1b5f4a72ab292aed27ffcd8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.17
+      value: -0.06
       objectReference: {fileID: 0}
     - target: {fileID: 2054650815, guid: 756bf770e1b5f4a72ab292aed27ffcd8, type: 3}
       propertyPath: m_LocalRotation.x
@@ -267,32 +279,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2054650815, guid: 756bf770e1b5f4a72ab292aed27ffcd8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.1
+      value: 8.75
       objectReference: {fileID: 0}
     - target: {fileID: 6001709978787866234, guid: 756bf770e1b5f4a72ab292aed27ffcd8,
         type: 3}
       propertyPath: areaToLoad
-      value: Upstairs-3
+      value: Hallway-2
       objectReference: {fileID: 0}
     - target: {fileID: 6001709978787866234, guid: 756bf770e1b5f4a72ab292aed27ffcd8,
         type: 3}
       propertyPath: areaTransitionName
-      value: AtticHallway
+      value: DownstairsHallway
       objectReference: {fileID: 0}
     - target: {fileID: 6001709978787866235, guid: 756bf770e1b5f4a72ab292aed27ffcd8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.74
+      value: -1.05
       objectReference: {fileID: 0}
     - target: {fileID: 6001709978787866235, guid: 756bf770e1b5f4a72ab292aed27ffcd8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.77
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 6001709978787866235, guid: 756bf770e1b5f4a72ab292aed27ffcd8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.84
+      value: 2.52
       objectReference: {fileID: 0}
     - target: {fileID: 6001709978787866235, guid: 756bf770e1b5f4a72ab292aed27ffcd8,
         type: 3}
@@ -333,6 +345,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001709978787866236, guid: 756bf770e1b5f4a72ab292aed27ffcd8,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.4
       objectReference: {fileID: 0}
     - target: {fileID: 6001709978787866237, guid: 756bf770e1b5f4a72ab292aed27ffcd8,
         type: 3}
@@ -3475,6 +3492,7 @@ PrefabInstance:
     - target: {fileID: 8031948439879468629, guid: c25add5ab5ef6421d9b3a63983f96b7f,
         type: 3}
       propertyPath: orthographic size
+<<<<<<< HEAD:Assets/Scenes/Downstairs.unity
       value: 5.572614
       objectReference: {fileID: 0}
     - target: {fileID: 8031948439879468629, guid: c25add5ab5ef6421d9b3a63983f96b7f,
@@ -3491,6 +3509,9 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BackGroundColor.b
       value: 0.7607844
+=======
+      value: 3
+>>>>>>> 8f1cf95ff2d0c5b9ac38b5c7ee7f01b30d577ba7:Assets/Scenes/Downstairs-5.unity
       objectReference: {fileID: 0}
     - target: {fileID: 8031948439879468631, guid: c25add5ab5ef6421d9b3a63983f96b7f,
         type: 3}
@@ -4227,3 +4248,43 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+<<<<<<< HEAD:Assets/Scenes/Downstairs.unity
+=======
+--- !u!19719996 &1644795391
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644795387}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
+--- !u!50 &1644795392
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644795387}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+>>>>>>> 8f1cf95ff2d0c5b9ac38b5c7ee7f01b30d577ba7:Assets/Scenes/Downstairs-5.unity
