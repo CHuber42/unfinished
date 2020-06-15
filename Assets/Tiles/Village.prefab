@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8476431996950925394}
   - component: {fileID: 7301729512711524187}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5774,7 +5774,7 @@ GameObject:
   - component: {fileID: 4455220852798885364}
   - component: {fileID: 1096024103388637389}
   - component: {fileID: 7965112332994048383}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5840,10 +5840,10 @@ TilemapRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6684107650422039284}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
@@ -5904,7 +5904,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8249588849448930395}
-  m_LocalRotation: {x: -0, y: -0, z: -0.49848717, w: 0.86689705}
+  m_LocalRotation: {x: 0, y: 0, z: -0.49848777, w: 0.86689675}
   m_LocalPosition: {x: 11.387001, y: 3.802637, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
