@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Attic-4.unity
     guid: e87dcb25875a74d2fab71895fd01bc62
+  - enabled: 1
+    path: Assets/Scenes/Downstairs-5.unity
+    guid: 37653b1137e61fc4da54450a0698bb4f
   m_configObjects: {}
