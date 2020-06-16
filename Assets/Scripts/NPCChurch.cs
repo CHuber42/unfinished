@@ -5,6 +5,7 @@ using UnityEngine;
 public class NPCChurch : MonoBehaviour
 {
   public bool visible = false;
+  public AudioSource spookySound;
   // Start is called before the first frame update
   void Start()
   {
@@ -30,6 +31,7 @@ public class NPCChurch : MonoBehaviour
         else
         {
           visible = true;
+          spookySound.Play();
         }
       }
     }
