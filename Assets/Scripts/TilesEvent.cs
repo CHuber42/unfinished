@@ -39,7 +39,7 @@ public class TilesEvent : MonoBehaviour
     if (visible)
     {
       GUIStyle myBoxStyle = new GUIStyle(GUI.skin.box);
-      myBoxStyle.fontSize = 40;
+      myBoxStyle.fontSize = 20;
       Font myFont = (Font)Resources.Load("../Fonts/Pixelnauts.ttf", typeof(Font));
       myBoxStyle.font = myFont;
       myBoxStyle.normal.textColor = Color.white;
