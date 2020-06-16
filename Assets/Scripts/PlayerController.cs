@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
   public Animator playerAnim;
   public static PlayerController instance;
   public string areaTransitionName;
-  public bool paintingFlipped;
+  public int gameState;
   // Start is called before the first frame update
   void Start()
   {

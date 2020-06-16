@@ -11,7 +11,7 @@ public class PaintingScript : MonoBehaviour
     void Start()
     {
         PlayerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
-        if (PlayerScript.paintingFlipped == true)
+        if (PlayerScript.gameState > 0)
         {
             WallSprite.sprite = replacementSprite;
         }
@@ -31,7 +31,7 @@ public class PaintingScript : MonoBehaviour
             if (Input.GetKeyDown("j"))
             {
               var player = other.GetComponentInParent<PlayerController>();
-              player.paintingFlipped = true;
+              player.gameState += 1;
               WallSprite.sprite = replacementSprite;
             }
         }
