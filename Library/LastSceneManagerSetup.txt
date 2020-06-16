@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Attic-4.unity
+=======
+- path: Assets/Scenes/Downstairs-5.unity
+>>>>>>> 8c6442da6cebf3bf62ce16f1f251ed4ea118c687
   isLoaded: 1
   isActive: 1
   isSubScene: 0
