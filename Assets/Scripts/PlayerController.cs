@@ -10,6 +10,9 @@ public class PlayerController : MonoBehaviour
   public static PlayerController instance;
   public string areaTransitionName;
   public bool paintingFlipped;
+  public bool atticTile1;
+  public bool atticTile2;
+  public bool atticTile3;
   // Start is called before the first frame update
   void Start()
   {

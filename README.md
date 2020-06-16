@@ -59,6 +59,8 @@ User is feeling in a gamblin' mood.
 #### Resources
 * [Protagonist](https://opengameart.org/content/stendhal-ghost)
 * [Backgrounds](https://blockydk.itch.io/twilight-village-rpg-tileset)
+* [Music](https://opengameart.org/content/spooky-dungeon)
+* [SFX](https://opengameart.org/content/misc-sfx-pack)
 
 #### License
 
