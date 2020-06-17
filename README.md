@@ -59,8 +59,11 @@ User is feeling in a gamblin' mood.
 #### Resources
 * [Protagonist](https://opengameart.org/content/stendhal-ghost)
 * [Backgrounds](https://blockydk.itch.io/twilight-village-rpg-tileset)
+* [NPC Ghosts and Sparkles](https://v3x3d.itch.io/deep-night/devlog/123509/everything-is-new)
 * [Music](https://opengameart.org/content/spooky-dungeon)
 * [SFX](https://opengameart.org/content/misc-sfx-pack)
+* [Necklace Sprite](https://opengameart.org/content/rings-and-necklaces-from-pixeltime-videos)
+* [Human NPCs](https://pipoya.itch.io/pipoya-free-rpg-character-sprites-32x32)
 
 #### License
 

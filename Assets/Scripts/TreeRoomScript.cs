@@ -3,50 +3,50 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TreeRoomScript : MonoBehaviour
-{   
-    public PlayerController PlayerScript;
-    public SpriteRenderer PaperSprite;
-    public Sprite replacementSprite;
+{
+  public PlayerController PlayerScript;
+  public SpriteRenderer PaperSprite;
+  public Sprite replacementSprite;
 
-    
-    public bool readable = false;
-    // Start is called before the first frame update
-    void Start()
+
+  public bool readable = false;
+  // Start is called before the first frame update
+  void Start()
+  {
+    PlayerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+    if (PlayerScript.gamestate > 5)
     {
-        PlayerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
-        if (PlayerScript.gameState > 5)
-        {
-            PaperSprite.sprite = replacementSprite;
-        }
-        
+      PaperSprite.sprite = replacementSprite;
     }
- 
-    // Update is called once per frame
-   void Update()
-    {
-            
-    }
+
+  }
+
+  // Update is called once per frame
+  void Update()
+  {
+
+  }
 
   void OnTriggerStay2D(Collider2D other)
+  {
+    if (other.tag == "Player")
     {
-        if (other.tag == "Player")
-        {
-            if (Input.GetKeyDown("j"))
-            {
-              var player = other.GetComponentInParent<PlayerController>();
-              player.gameState += 1;
-              readable = true;
-              PaperSprite.sprite = replacementSprite;
-            }
-        }
+      if (Input.GetKeyDown("j"))
+      {
+        var player = other.GetComponentInParent<PlayerController>();
+        player.gamestate += 1;
+        readable = true;
+        PaperSprite.sprite = replacementSprite;
+      }
     }
-    void OnTriggerExit2D(Collider2D other)
+  }
+  void OnTriggerExit2D(Collider2D other)
+  {
+    if (other.tag == "Player")
     {
-        if (other.tag == "Player")
-        {
-            readable = false;
-        }
+      readable = false;
     }
+  }
 
   void OnGUI()
   {
