@@ -3,8 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - AboveBGBelowPlayer
+  tags: [AboveBGBelowPlayer]
   layers:
   - Default
   - TransparentFX
@@ -47,6 +46,9 @@ TagManager:
     locked: 0
   - name: NPC
     uniqueID: 3951690961
+    locked: 0
+  - name: BG Interactables
+    uniqueID: 141268625
     locked: 0
   - name: Player
     uniqueID: 1735346259
