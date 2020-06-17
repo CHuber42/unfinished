@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AtticSparkle : MonoBehaviour
 {
+    public Texture sparkleSprite;
     public AudioSource soundEffect;
     public GameObject sparkle;
     public PlayerController PlayerScript;
@@ -33,6 +34,7 @@ public class AtticSparkle : MonoBehaviour
       if (Input.GetKeyDown("j") && PlayerScript.gamestate < 4)
       {
         soundEffect.Play();
+        PlayerScript.Inventory.Add(sparkleSprite);
         PlayerScript.gamestate = 4;
       }
     }

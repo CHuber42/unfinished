@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Downstairs-6.unity
     guid: a26259c77ae8bf54d8356150ec62ad66
+  - enabled: 1
+    path: Assets/Scenes/CutsceneHallway.unity
+    guid: cbea90ce7a84c4840ba3a7ddfad76f96
+  - enabled: 1
+    path: Assets/Scenes/CutsceneOpening.unity
+    guid: 0ee19032af3e040659d6b23a08d12157
   m_configObjects: {}

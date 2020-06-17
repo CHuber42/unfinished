@@ -192,6 +192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39ae89f706d62361a82c2db9a09ae6b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sparkleSprite: {fileID: 2800000, guid: 1e2cf3ad3c13745cebc39c4bea40d5e1, type: 3}
   soundEffect: {fileID: 2140731525}
   sparkle: {fileID: 696310220}
   PlayerScript: {fileID: 0}

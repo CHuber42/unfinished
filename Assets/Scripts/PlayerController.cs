@@ -13,10 +13,14 @@ public class PlayerController : MonoBehaviour
   public bool atticTile1;
   public bool atticTile2;
   public bool atticTile3;
+  public bool candle = false;
+  public List<Texture> Inventory;
+  public bool hallwayCutscenePlayed = false;
   // Start is called before the first frame update
   void Start()
   {
     DontDestroyOnLoad(gameObject);
+    Inventory = new List<Texture> { };
 
     if (instance == null)
     {
@@ -43,6 +47,14 @@ public class PlayerController : MonoBehaviour
     {
       playerAnim.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
       playerAnim.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
+    }
+  }
+
+  void OnGUI()
+  {
+    for (int index = 0; index < Inventory.Count; index++)
+    {
+      GUI.Box(new Rect(Screen.width - (index * 40 + 40), 0, 40, 40), Inventory[index]);
     }
   }
 }

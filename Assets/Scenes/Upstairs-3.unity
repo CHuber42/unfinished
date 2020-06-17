@@ -1918,6 +1918,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8faf398076a9c9148bae7a5dba98769d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  booksprite: {fileID: 2800000, guid: 402114ac173fd592fa45c7fa9f92d633, type: 3}
   soundeffect: {fileID: 495035051}
   bookshelf: {fileID: 1297193591}
   PlayerScript: {fileID: 0}
@@ -2190,6 +2191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64412cffcd8b8ead895f7655f8860acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryBook: {fileID: 2800000, guid: 402114ac173fd592fa45c7fa9f92d633, type: 3}
   book: {fileID: 1823716095}
   PlayerScript: {fileID: 0}
 --- !u!61 &1823716098

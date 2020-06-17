@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BookShelf : MonoBehaviour
 {
+    public Texture booksprite;
     public AudioSource soundeffect;
     public GameObject bookshelf;
     public PlayerController PlayerScript;
@@ -35,6 +36,7 @@ public class BookShelf : MonoBehaviour
       {
         PlayerScript.gamestate = 3;
         soundeffect.Play();
+        PlayerScript.Inventory.Remove(booksprite);
         bookshelf.SetActive(false);
       }
     }

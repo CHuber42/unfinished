@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Book : MonoBehaviour
 {
+    public Texture inventoryBook;
     public GameObject book;
     public PlayerController PlayerScript;
     // Start is called before the first frame update
@@ -34,6 +35,7 @@ public class Book : MonoBehaviour
       if (Input.GetKeyDown("j") && PlayerScript.gamestate < 2)
       {
         PlayerScript.gamestate = 2;
+        PlayerScript.Inventory.Add(inventoryBook);
         book.SetActive(false);
       }
     }
