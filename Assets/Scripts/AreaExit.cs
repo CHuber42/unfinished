@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class AreaExit : MonoBehaviour
 {
-  public bool lockedMessageTimer;
+  public GameObject lockedMessage;
   public AudioSource keyFail;
   public AudioSource keySuccess;
   public Texture key;
@@ -65,16 +65,8 @@ public class AreaExit : MonoBehaviour
 
   IEnumerator DoorLocked()
   {
-    lockedMessageTimer = true;
+    lockedMessage.SetActive(true);
     yield return new WaitForSeconds(3);
-    lockedMessageTimer = false;
-  }
-
-  public void OnGUI()
-  {
-    if (lockedMessageTimer)
-    {
-      GUI.Box(new Rect(Screen.width / 4, 2 * Screen.height / 3, Screen.width / 2, Screen.height / 3), "Seems I need a key...");
-    }
+    lockedMessage.SetActive(false);
   }
 }

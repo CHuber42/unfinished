@@ -7,6 +7,8 @@ public class NPC_Collider_Interaction : MonoBehaviour
   public GameObject PossessionText;
   public GameObject DialogBox;
 
+  public GameObject NPCDialogBox;
+
   // Start is called before the first frame update
   void Start()
   {
@@ -22,7 +24,10 @@ public class NPC_Collider_Interaction : MonoBehaviour
   {
     if (player.tag == "Player" && Input.GetKeyDown("j"))
     {
-      StartCoroutine(PossessionCoroutine());
+      if (NPCDialogBox.activeSelf == false)
+      {
+        StartCoroutine(PossessionCoroutine());
+      }
     }
   }
 

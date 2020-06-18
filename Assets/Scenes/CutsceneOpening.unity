@@ -3033,6 +3033,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3654192072817122369, guid: af60a342ac9014d6c8ad88ceb3f65b0f,
         type: 3}
+    - target: {fileID: 3126425557525994763, guid: 3fecbdeaf3df149f4b515e2dc7ef4fd4,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3961105208500734728, guid: 3fecbdeaf3df149f4b515e2dc7ef4fd4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3110,6 +3115,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fecbdeaf3df149f4b515e2dc7ef4fd4, type: 3}
+--- !u!1 &1696476825 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8688745715611136818, guid: 3fecbdeaf3df149f4b515e2dc7ef4fd4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1696476824}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1696476826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696476825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b686206dd9db442d2a1625cf604568b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PossessionText: {fileID: 8816224253747697536, guid: e77b72c5a7827472a90958da3729cbb0,
+    type: 3}
+  DialogBox: {fileID: 8744817716473411342, guid: 928531f45ce044a2d80f75eed44995c6,
+    type: 3}
+  NPCDialogBox: {fileID: 1693643747}
 --- !u!1 &1775874890 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3349683282074962488, guid: c59a6aad29978455db0491ef3d99d746,
@@ -3401,6 +3429,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7074577812041489181, guid: 75a0835b8df21436eae7b02a4523ea22,
+        type: 3}
+      propertyPath: NPCDialogBox
+      value: 
+      objectReference: {fileID: 1693643747}
     - target: {fileID: 8541376983076275728, guid: 75a0835b8df21436eae7b02a4523ea22,
         type: 3}
       propertyPath: m_Name

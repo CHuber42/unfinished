@@ -2603,6 +2603,16 @@ PrefabInstance:
       propertyPath: m_Direction
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3126425557525994763, guid: 3fecbdeaf3df149f4b515e2dc7ef4fd4,
+        type: 3}
+      propertyPath: m_UsedByEffector
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3126425557525994763, guid: 3fecbdeaf3df149f4b515e2dc7ef4fd4,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3961105208500734728, guid: 3fecbdeaf3df149f4b515e2dc7ef4fd4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2782,6 +2792,23 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1745453932432980908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745453932432980904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b686206dd9db442d2a1625cf604568b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PossessionText: {fileID: 8816224253747697536, guid: e77b72c5a7827472a90958da3729cbb0,
+    type: 3}
+  DialogBox: {fileID: 8744817716473411342, guid: 928531f45ce044a2d80f75eed44995c6,
+    type: 3}
+  NPCDialogBox: {fileID: 0}
 --- !u!1001 &5853066379700400631
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2952,6 +2979,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7074577812041489181, guid: 75a0835b8df21436eae7b02a4523ea22,
+        type: 3}
+      propertyPath: NPCDialogBox
+      value: 
+      objectReference: {fileID: 1693643747}
     - target: {fileID: 8541376983076275728, guid: 75a0835b8df21436eae7b02a4523ea22,
         type: 3}
       propertyPath: m_Name

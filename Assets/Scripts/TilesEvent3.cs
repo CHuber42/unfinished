@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class TilesEvent3 : MonoBehaviour
 {
+  public GameObject dialogue3;
   public AudioSource soundeffect;
-  public bool visible3 = false;
   public PlayerController PlayerScript;
   public SpriteRenderer atticSprite3;
   public Sprite blueSpriteTwo;
@@ -35,7 +35,7 @@ public class TilesEvent3 : MonoBehaviour
     PlayerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
     if (other.tag == "Player" && PlayerScript.atticTile1 == true && PlayerScript.atticTile2 == true)
     {
-      visible3 = true;
+      dialogue3.SetActive(true); //<--
       var player = other.GetComponentInParent<PlayerController>();
       player.atticTile3 = true;
       atticSprite3.sprite = blueSpriteTwo;
@@ -48,20 +48,7 @@ public class TilesEvent3 : MonoBehaviour
   {
     if (other.tag == "Player")
     {
-      visible3 = false;
-    }
-  }
-
-  void OnGUI()
-  {
-    if (visible3)
-    {
-      GUIStyle myBoxStyle = new GUIStyle(GUI.skin.box);
-      myBoxStyle.fontSize = 20;
-      Font myFont = (Font)Resources.Load("../Fonts/Pixelnauts.ttf", typeof(Font));
-      myBoxStyle.font = myFont;
-      myBoxStyle.normal.textColor = Color.white;
-      GUI.Box(new Rect(Screen.width / 4, 2 * Screen.height / 3, Screen.width / 2, Screen.height / 3), "Sounds like the desk might have opened?", myBoxStyle);
+      dialogue3.SetActive(false); //<---
     }
   }
 }

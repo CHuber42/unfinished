@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TilesEvent : MonoBehaviour
 {
+  public GameObject dialogue1;
   public bool visible1 = false;
   public PlayerController PlayerScript;
   public SpriteRenderer atticSprite;
@@ -33,6 +34,7 @@ public class TilesEvent : MonoBehaviour
     if (other.tag == "Player" && PlayerScript.gamestate == 3)
     {
       visible1 = true;
+      dialogue1.SetActive(true);
       var player = other.GetComponentInParent<PlayerController>();
       player.atticTile1 = true;
       atticSprite.sprite = blueSpriteThree;
@@ -45,19 +47,7 @@ public class TilesEvent : MonoBehaviour
     if (other.tag == "Player")
     {
       visible1 = false;
-    }
-  }
-
-  void OnGUI()
-  {
-    if (visible1)
-    {
-      GUIStyle myBoxStyle = new GUIStyle(GUI.skin.box);
-      myBoxStyle.fontSize = 20;
-      Font myFont = (Font)Resources.Load("../Fonts/Pixelnauts.ttf", typeof(Font));
-      myBoxStyle.font = myFont;
-      myBoxStyle.normal.textColor = Color.white;
-      GUI.Box(new Rect(Screen.width / 4, 2 * Screen.height / 3, Screen.width / 2, Screen.height / 3), "There are some loose tiles here...", myBoxStyle);
+      dialogue1.SetActive(false);
     }
   }
 }

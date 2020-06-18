@@ -2332,6 +2332,11 @@ PrefabInstance:
       propertyPath: greenAnim
       value: 
       objectReference: {fileID: 1081230061}
+    - target: {fileID: 7074577812041489181, guid: 75a0835b8df21436eae7b02a4523ea22,
+        type: 3}
+      propertyPath: NPCDialogBox
+      value: 
+      objectReference: {fileID: 1430361939}
     - target: {fileID: 8541376983076275728, guid: 75a0835b8df21436eae7b02a4523ea22,
         type: 3}
       propertyPath: m_Name
@@ -3920,6 +3925,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &993320725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993320721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b686206dd9db442d2a1625cf604568b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PossessionText: {fileID: 8816224253747697536, guid: e77b72c5a7827472a90958da3729cbb0,
+    type: 3}
+  DialogBox: {fileID: 8744817716473411342, guid: 928531f45ce044a2d80f75eed44995c6,
+    type: 3}
+  NPCDialogBox: {fileID: 1430361939}
 --- !u!1001 &1025693140
 PrefabInstance:
   m_ObjectHideFlags: 0

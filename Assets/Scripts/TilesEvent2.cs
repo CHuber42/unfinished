@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TilesEvent2 : MonoBehaviour
 {
-  public bool visible2 = false;
+  public GameObject dialogue2;
   public PlayerController PlayerScript;
   public SpriteRenderer atticSprite2;
   public SpriteRenderer atticSprite3;
@@ -34,7 +34,7 @@ public class TilesEvent2 : MonoBehaviour
     PlayerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
     if (other.tag == "Player" && PlayerScript.atticTile1 == true)
     {
-      visible2 = true;
+      dialogue2.SetActive(true);
       var player = other.GetComponentInParent<PlayerController>();
       player.atticTile2 = true;
       atticSprite2.sprite = blueSpriteThree;
@@ -46,20 +46,7 @@ public class TilesEvent2 : MonoBehaviour
   {
     if (other.tag == "Player")
     {
-      visible2 = false;
-    }
-  }
-
-  void OnGUI()
-  {
-    if (visible2)
-    {
-      GUIStyle myBoxStyle = new GUIStyle(GUI.skin.box);
-      myBoxStyle.fontSize = 20;
-      Font myFont = (Font)Resources.Load("../Fonts/Pixelnauts.ttf", typeof(Font));
-      myBoxStyle.font = myFont;
-      myBoxStyle.normal.textColor = Color.white;
-      GUI.Box(new Rect(Screen.width / 4, 2 * Screen.height / 3, Screen.width / 2, Screen.height / 3), "There it goes again...", myBoxStyle);
+      dialogue2.SetActive(false);
     }
   }
 }
