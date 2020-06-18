@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class KnightFront1Script : MonoBehaviour
 {
+    public GameObject byknighttextNE;
     public PlayerController PlayerScript;
-    public bool ByKnight = false;
-    public int Count = 0;
    
 
     // Start is called before the first frame update
@@ -23,33 +22,18 @@ public class KnightFront1Script : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Player" && Count == 0) 
+        if(other.tag == "Player" && PlayerController.instance.gamestate < 9) 
         {
-            ByKnight = true;
-            Count += 1;
+            byknighttextNE.SetActive(true);
+            PlayerController.instance.gamestate = 8;
         }
     }
  
      void OnTriggerExit2D(Collider2D other)
     {
-        if(other.tag == "Player" && Count == 1) 
+        if(other.tag == "Player") 
         {
-            ByKnight = false;
+            byknighttextNE.SetActive(false);
         }
     }
-
-    void OnGUI()
-    {
-        if (ByKnight && Count == 1)
-        {
-            GUIStyle myBoxStyle = new GUIStyle(GUI.skin.box);
-            myBoxStyle.fontSize = 20;
-            Font myFont = (Font)Resources.Load("../Fonts/Pixelnauts.ttf", typeof(Font));
-            myBoxStyle.font = myFont;
-            myBoxStyle.alignment = TextAnchor.MiddleCenter;
-            myBoxStyle.normal.textColor = Color.white;
-            GUI.Box(new Rect(Screen.width / 4, 2 * Screen.height / 3, Screen.width / 2, Screen.height / 3), "I see Alfred has told you to come talk to me... \nPredictable... you tell him I wish not to have anything to do with him... \nGo on now...Tell him he needs to settle things first! \n He will know what I mean  ", myBoxStyle);
-        }
-    }
-
 }

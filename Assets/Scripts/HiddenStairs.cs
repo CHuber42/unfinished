@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class HiddenStairs : MonoBehaviour
 {
+    public GameObject StairsHider;
     public PlayerController PlayerScript;
     public string areaToLoad;
     public SpriteRenderer SpriteHolder;
@@ -28,9 +29,9 @@ public class HiddenStairs : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (PlayerScript.gamestate > 0)
+        if (PlayerScript.gamestate > 12)
         {
-            SpriteHolder.sprite = StairsSprite;
+            StairsHider.SetActive(false);
         }
         if (shouldLoadAfterFade)
         {
@@ -42,4 +43,14 @@ public class HiddenStairs : MonoBehaviour
             }
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+  {
+    if (other.tag == "Player" && PlayerScript.gamestate > 12)
+    {
+      shouldLoadAfterFade = true;
+      UIFade.instance.FadeToBlack();
+      PlayerController.instance.areaTransitionName = areaTransitionName;
+    }
+  }
 }

@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class TreeRoomScript : MonoBehaviour
 {
+  public GameObject treenote;
   public PlayerController PlayerScript;
   public SpriteRenderer PaperSprite;
   public Sprite replacementSprite;
-  public GameObject floornote;
+
   // Start is called before the first frame update
   void Start()
   {
     PlayerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+
     if (PlayerScript.gamestate > 5)
     {
       PaperSprite.sprite = replacementSprite;
@@ -31,9 +33,8 @@ public class TreeRoomScript : MonoBehaviour
     {
       if (Input.GetKeyDown("j"))
       {
-        var player = other.GetComponentInParent<PlayerController>();
-        player.gamestate += 1;
-        floornote.SetActive(true);
+        PlayerController.instance.gamestate = 6;
+        treenote.SetActive(true);
         PaperSprite.sprite = replacementSprite;
       }
     }
@@ -42,7 +43,7 @@ public class TreeRoomScript : MonoBehaviour
   {
     if (other.tag == "Player")
     {
-      floornote.SetActive(false);
+      treenote.SetActive(false);
     }
   }
 }

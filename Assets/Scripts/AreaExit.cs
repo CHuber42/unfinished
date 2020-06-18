@@ -47,6 +47,7 @@ public class AreaExit : MonoBehaviour
           shouldLoadAfterFade = true;
           UIFade.instance.FadeToBlack();
           PlayerController.instance.areaTransitionName = areaTransitionName;
+          PlayerController.instance.Inventory.Remove(key);
         }
         else
         {

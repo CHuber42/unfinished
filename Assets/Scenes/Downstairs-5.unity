@@ -409,6 +409,15 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+  - first: {x: -4, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 6
+      m_TileSpriteIndex: 6
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
   - first: {x: -4, y: -2, z: 0}
     second:
       serializedVersion: 2
@@ -801,7 +810,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 55561d6e5b17948bba82c82866ff1f1e, type: 2}
   - m_RefCount: 5
     m_Data: {fileID: 11400000, guid: 9d2580539cc67490a8fe0362965c8540, type: 2}
-  - m_RefCount: 7
+  - m_RefCount: 8
     m_Data: {fileID: 11400000, guid: fe8c49f816f6947bf83d82b93104b006, type: 2}
   - m_RefCount: 16
     m_Data: {fileID: 11400000, guid: 936828575e61b453b847d33fc88d1560, type: 2}
@@ -832,7 +841,7 @@ Tilemap:
   - m_RefCount: 5
     m_Data: {fileID: 8839841241620823753, guid: 8756b11263ed349e6a810bda4652e81c,
       type: 3}
-  - m_RefCount: 7
+  - m_RefCount: 8
     m_Data: {fileID: -891817841316443802, guid: 8756b11263ed349e6a810bda4652e81c,
       type: 3}
   - m_RefCount: 16
@@ -850,7 +859,7 @@ Tilemap:
     m_Data: {fileID: 8923175338807875721, guid: 8756b11263ed349e6a810bda4652e81c,
       type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 64
+  - m_RefCount: 65
     m_Data:
       e00: 1
       e01: 0
@@ -869,7 +878,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 64
+  - m_RefCount: 65
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -1796,8 +1805,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -200}
-  m_SizeDelta: {x: 650, y: 200}
+  m_AnchoredPosition: {x: 0, y: -150}
+  m_SizeDelta: {x: 750, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &711384403
 MonoBehaviour:
@@ -4004,7 +4013,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -5090,7 +5099,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5182001, y: 0.5}
   m_AnchorMax: {x: 0.5182001, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 400, y: 50}
+  m_SizeDelta: {x: 400, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1423763790
 MonoBehaviour:
@@ -5118,7 +5127,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -5168,7 +5177,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5182001, y: 0.5}
   m_AnchorMax: {x: 0.5182001, y: 0.5}
   m_AnchoredPosition: {x: -10, y: -30}
-  m_SizeDelta: {x: 600, y: 200}
+  m_SizeDelta: {x: 700, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1478869858
 MonoBehaviour:
@@ -5196,15 +5205,17 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\t\tA letter. It reads:\n\" ... To my Beloved William, It was many fortnights
+  m_Text: 'A letter. It reads:
+
+    " ... To my Beloved William, It was many fortnights
     ago since I have seen you last. I came here looking for answers, All I have found
-    is cobwebs and dead ends. I am going to check the basement for clues...\""
+    is cobwebs and dead ends. I am going to check the basement for clues..."'
 --- !u!222 &1478869859
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5575,8 +5586,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -200}
-  m_SizeDelta: {x: 450, y: 100}
+  m_AnchoredPosition: {x: 0, y: -170}
+  m_SizeDelta: {x: 450, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1804151797
 MonoBehaviour:
