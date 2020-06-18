@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
   public bool candle = false;
   public List<Texture> Inventory;
   public bool hallwayCutscenePlayed = false;
+  public bool downstairs5CutscenePlayed = false;
   // Start is called before the first frame update
   void Start()
   {

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8541376983076275741}
   - component: {fileID: 8541376983076275743}
   - component: {fileID: 2894716625518221472}
+  - component: {fileID: 7074577812041489181}
   m_Layer: 0
   m_Name: GreenShirt
   m_TagString: Untagged
@@ -95,7 +96,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.12870702, y: -0.1340701}
@@ -141,3 +142,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7074577812041489181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8541376983076275728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b686206dd9db442d2a1625cf604568b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PossessionText: {fileID: 8816224253747697536, guid: e77b72c5a7827472a90958da3729cbb0,
+    type: 3}
+  DialogBox: {fileID: 8744817716473411342, guid: 928531f45ce044a2d80f75eed44995c6,
+    type: 3}
