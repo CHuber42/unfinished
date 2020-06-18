@@ -1935,17 +1935,17 @@ ScriptsOnlyBuild:
     className: Book
   platform: 20
   scenePathNames:
+  - Assets/Scenes/CutsceneOpening2.unity
   - Assets/Scenes/Bedroom-1.unity
   - Assets/Scenes/Hallway-2.unity
+  - Assets/Scenes/CutsceneHallway.unity
   - Assets/Scenes/Upstairs-3.unity
+  - Assets/Scenes/CutsceneUpstairs.unity
   - Assets/Scenes/Attic-4.unity
+  - Assets/Scenes/CutsceneAttic.unity
+  - Assets/Scenes/CutsceneDownstairs5.unity
   - Assets/Scenes/Downstairs-5.unity
   - Assets/Scenes/Downstairs-6.unity
-  - Assets/Scenes/CutsceneHallway.unity
-  - Assets/Scenes/CutsceneOpening.unity
-  - Assets/Scenes/CutsceneOpening2.unity
-  - Assets/Scenes/CutsceneUpstairs.unity
-  - Assets/Scenes/CutsceneAttic.unity
   - Assets/Scenes/Downstairs-7.unity
-  - Assets/Scenes/CutsceneDownstairs5.unity
-  playerPath: /Users/jhvozdovich/Desktop/unfinished/BUILD
+  - Assets/Scenes/CutsceneOpening.unity
+  playerPath: /Users/jhvozdovich/Desktop/unfinished/BUILD4

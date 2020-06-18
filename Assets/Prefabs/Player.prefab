@@ -72,7 +72,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1735346259
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -2192938834016724446, guid: cd9c47eebffee4023b68f85ae622a4bc,
     type: 3}
@@ -139,7 +139,14 @@ MonoBehaviour:
   moveSpeed: 2
   playerAnim: {fileID: 3349683282074962498}
   areaTransitionName: 
-  paintingFlipped: 0
+  gamestate: 0
+  atticTile1: 0
+  atticTile2: 0
+  atticTile3: 0
+  candle: 0
+  Inventory: []
+  hallwayCutscenePlayed: 0
+  downstairs5CutscenePlayed: 0
 --- !u!95 &3349683282074962498
 Animator:
   serializedVersion: 3
