@@ -11,8 +11,8 @@ _This is a 2D game built using the Unity Engine. You play as a ghost who is summ
 Go to where we host our website at ---.
 Or alternatevely you can clone the game and run it on the Unity Editor.
 
-#As the Intro/Title screen are currently bugged, they've been temporarily cut.  
-#Navigate the game with up/down/left/right keys, "interact" with the "j" key.  
+# As the Intro/Title screen are currently bugged, they've been temporarily cut.  
+# Navigate the game with up/down/left/right keys, "interact" with the "j" key.  
 
 ### Known Bugs
 
